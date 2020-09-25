@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario_Registrarse.css">
+    <link href="https://fonts.googleapis.com/css?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registro de usuario</h1>
+
+<form action="" class="form">
+    <fieldset class="fieldset-1"> <legend> Datos personales:</legend>
+    <div class="inp-name">
+        <label >
+            Ingrese su nombre:
+            <input name="username "type="text"  placeholder="Nombre" required  >
+        </label>
+    </div>
+    <div class="inp-pass">
+        <label>
+            Ingrese su contraseña:
+            <input name="password "type="password"  placeholder="contraseña" required >
+        </label>
+    </div>
+    <div class="inp-pass2">
+        <label>
+            verifique su contraseña:
+            <input name="password2"type="password"  placeholder="vuelva a introducir su contraseña"required   > 
+        </label>
+    </div>
+    <div class="inp-edad">
+        <label>
+            Edad:
+             <input name="edad "type="number"  placeholder="edad"required >   
+        </label>
+    </div>
+    <div class="inp-email">
+        <label>
+            Email:
+            <input name="Email "type="Email"  placeholder="email@.com"required  >
+        </label>
+    </div>
+    <div class="inp-date">
+        <label>
+            Fecha de nacimiento:
+            <input type="date" required  >
+        </label>
+    </div>
+ </fieldset>
+ <fieldset class="fieldset-2" > <legend> Genero</legend>
+    <label>  Masculino
+        <input name="genero" type="radio"></label>
+        <label> femenino <input name="genero" type="radio"> 
+    </label>
+ </fieldset>
+ 
+ <fieldset class="fieldset-3">
+    <legend>Seleccionar tu pais</legend>
+    <select name="countri" id="countri" placeholder=" ">Escoge tu país
+        <optgroup label="America" autofocus>
+    
+            <option value="Ar">Argentina</option>
+            <option value="Bz">Brazil</option>
+            <option value="Pe">Peru</option>
+            <option value="Mx">Mexico</option>
+            <option value="Ve">Venezuela</option>
+        </optgroup>
+        <optgroup label="Europa"  >
+        
+            <option value="Al">Alemania</option>
+            <option value="Bg">Belgica</option>
+            <option value="Es">España</option>
+            <option value="fr">Francia</option>
+            <option value="It">Italia</option>
+        </optgroup>
+        <optgroup label="Asia">
+        
+            <option value="fr">Australia</option>
+            <option value="Al">China</option>
+            <option value="Bg">Japon</option>
+            <option value="Es">Corea del Sur</option>
+            <option value="It">Indonesia</option>
+            <option selected></option>
+        </optgroup>
+    </select>
+ </fieldset>
+ 
+
+ <div class="botton-last">
+    <input type="submit" value="Regristrarse" class="guarda">
+    <input type="button" value="Cancelar" onclick="history.go(-1);" class="cancelar">
+ </div>
+</form>
+</body>
+</html>
